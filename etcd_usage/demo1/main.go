@@ -17,7 +17,7 @@ func main() {
 		putResp *clientv3.PutResponse
 	)
 	cli, err = clientv3.New(clientv3.Config{
-		Endpoints:   []string{"192.168.0.16:2379"},
+		Endpoints:   []string{"localhost:2379"},
 		DialTimeout: time.Second * 5,
 	})
 	if err != nil {
